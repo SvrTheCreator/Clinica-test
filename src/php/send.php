@@ -1,17 +1,12 @@
 <?php
-$to = 'kingofnothing@bk.ru';
-$from = 'Clinica@mail.ru';
-$name = trim($_POST['name']);
-$number = trim($_POST['number']);
-$text = 'Тестовое';
 
-$headers = "From: $from" . "\r\n".
-"Reply-To: $from" . "\r\n".
-"X-Mailer: PHP/" . phpversion();
+$name = $_POST['name'];
+$number = $_POST['number'];
+$name = htmlspecialchars($name);
+$number = htmlspecialchars($number);
+$name = urldecode($name);
+$number = urldecode($number);
+$name = trim($name);
+$number = trim($number);
 
-if(mail($to,$number,$text,$headers)){
-    echo 'Письмо отправлено';
-}else{
-    echo 'Письмо не доставлено';
-}
-?>
+mail("kingofnothing@bk.ru", "Тестовое задание", "Имя:" . $name . ". Номер: " . $number, "From: kingofnothing@bk.ru \r\n");

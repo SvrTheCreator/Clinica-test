@@ -283,7 +283,18 @@
           <div class="popup-close__wrapper">
             <img class="popup-close" src="/img/burger-menu-cancel.svg" alt="" />
           </div>
-          <form aсtion="./src/php/send.php" method="POST">
+
+          <form action="./srs/php/send.php" method="post">
+            <input type="text" name="name" placeholder="Укажите имя" required />
+            <input
+              type="number"
+              name="number"
+              placeholder="Укажите номер"
+              required
+            />
+            <input type="submit" value="Отправить" />
+          </form>
+          <!-- <form aсtion="./src/php/send.php" method="POST">
             <input
               type="name"
               name="name"
@@ -299,7 +310,7 @@
               required
             />
             <button type="submit" value="Отправить заявку">Отправить</button>
-          </form>
+          </form> -->
         </div>
       </div>
     </div>
