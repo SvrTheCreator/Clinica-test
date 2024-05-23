@@ -1,0 +1,77 @@
+@import '../../base/variables.scss';
+
+.mobile-nav {
+  position: absolute;
+  top: -150%;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0px 15px 0px 15px;
+  background: #45927fe5;
+  transition: all 0.2s ease-in;
+  font-size: 16px;
+  a {
+    color: #fff;
+  }
+  button {
+    @extend %default-button;
+    @extend %white-button;
+    color: #1fa181;
+    border: 1px solid #0dbc91;
+  }
+}
+.nav-icon-cancel {
+  display: none;
+}
+.nav-icon {
+  display: none;
+}
+.nav-active {
+  display: block;
+}
+.nav {
+  font-size: 18px;
+}
+.nav__list {
+  display: flex;
+  column-gap: 30px;
+}
+
+.mobile-nav--open {
+  top: 70px;
+}
+
+.mobile-nav__list {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 20px 0;
+  row-gap: 20px;
+  font-size: 16px;
+}
+@media (min-width: 769px) {
+  .container {
+    max-width: 1140px;
+  }
+  .mobile-nav {
+    background-color: #1fa181;
+    padding: 15px;
+    position: static;
+    width: auto;
+    top: 0;
+    left: 0;
+    &__list {
+      margin: 0% auto;
+      max-width: 1140px;
+      padding: 0px;
+      width: 100%;
+      gap: 20px;
+      flex-direction: row;
+    }
+    &__button {
+      display: none;
+    }
+  }
+}

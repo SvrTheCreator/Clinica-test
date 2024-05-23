@@ -1,0 +1,19 @@
+@import 'normalize.css';
+@import './blocks/header/header.scss';
+@import './blocks/header/mobile-nav.scss';
+@import './base/variables.scss';
+@import './base/base.scss';
+@import './blocks/main/multidisciplinary-clinic.scss';
+@import './blocks/main/services.scss';
+@import './blocks/footer/footer.scss';
+@import './base/slider.scss';
+@import './blocks/popup/popup.scss';
+.container {
+  margin: 0% auto;
+  max-width: 499px;
+}
+@media (min-width: 769px) {
+  .container {
+    max-width: 1140px;
+  }
+}

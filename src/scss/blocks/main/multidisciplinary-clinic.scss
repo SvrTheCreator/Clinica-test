@@ -1,0 +1,45 @@
+.multidisciplinary-clinic {
+  // width: 100%;
+  padding: 0 15px 0 15px;
+  color: #364844;
+  background-color: #f8fbfa;
+  .container {
+    height: 100%;
+  }
+  &__description {
+    padding-bottom: 50px;
+  }
+  .description__img img {
+    width: 100%;
+  }
+  .multidisciplinary-clinic__description {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media (min-width: 769px) {
+  .multidisciplinary-clinic {
+    height: 533px;
+    background-image: url('../../../../public/img/clinic1.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50%;
+    &__description {
+      height: 100%;
+      display: grid;
+      align-items: center;
+      grid-template-columns: 1fr 1fr;
+      h1 {
+        width: 416px;
+        font-size: 36px;
+        font-weight: 700;
+      }
+      p {
+        width: 367px;
+      }
+    }
+    .description__img {
+      display: none;
+    }
+  }
+}

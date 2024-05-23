@@ -1,0 +1,27 @@
+%default-button {
+  cursor: pointer;
+  border: none;
+  width: 196px;
+  height: 43px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+}
+%white-button:hover,
+%white-button:active {
+  background-color: #0dbc91;
+  color: #ffffff;
+}
+%green-button:hover,
+%green-button:active {
+  background-color: #00d29f;
+  color: #ffffff;
+}
+
+%mobile-button {
+  cursor: pointer;
+  border: none;
+  width: 137px;
+  height: 43px;
+  border-radius: 50px;
+}

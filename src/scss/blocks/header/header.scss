@@ -1,0 +1,47 @@
+@import '../../base/variables.scss';
+
+.header {
+  // width: 100%;
+  padding: 15px;
+  &__section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mobile-nav-btn {
+    border: none;
+    background-color: inherit;
+  }
+  .header__button {
+    @extend %default-button;
+    @extend %green-button;
+    background-color: #0dbc91;
+    color: #fff;
+  }
+}
+.header__button,
+.address,
+.number,
+.whatsapp {
+  display: none;
+}
+@media (min-width: 769px) {
+  header {
+    .mobile-nav-btn,
+    .mobile__number {
+      display: none;
+    }
+    .header__button,
+    .address,
+    .number,
+    .whatsapp {
+      display: block;
+    }
+  }
+}
