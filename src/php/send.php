@@ -9,4 +9,4 @@ $number = urldecode($number);
 $name = trim($name);
 $number = trim($number);
 
-mail("kingofnothing@bk.ru", "Тестовое задание", "Имя:" . $name . ". Номер: " . $number, "From: kingofnothing@bk.ru \r\n");
+mail("rbru-metrika@yandex.ru", "Тестовое задание", "Имя:" . $name . ". Номер: " . $number, "From: kingofnothing@bk.ru \r\n");

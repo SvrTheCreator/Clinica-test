@@ -14,14 +14,12 @@ function slide() {
     }
     slides[currentIndex].style.opacity = 1
     sliderCount.innerHTML = currentIndex + 1
-    console.log('левая', currentIndex)
   }
   arrowRight.onclick = function () {
     slides[currentIndex].style.opacity = 0
     currentIndex = (currentIndex + 1) % slides.length
     slides[currentIndex].style.opacity = 1
     sliderCount.innerHTML = currentIndex + 1
-    console.log('правая', currentIndex)
   }
 }
 
